@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Fitness</title>
+</head>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* css reset */
+        body{
+            font-family: "Pacifico", cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url("../img/bg2.jpg") no-repeat top center fixed;
+            background-size: cover;
+
+            /* height: 10px; */
+        }
+        .left{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            left: 48px;
+            top: 42px;
+        }
+        .left img{
+            width: 56px;
+            filter: invert(100%);
+            display: block;
+            margin: 0 auto;
+        }
+        .left div{
+            font-size: 22px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .middle{
+            font-size: 43px;
+            width: 100%;
+            margin: 35px auto;
+            text-align: center;
+        }
+        .right{
+            position: absolute;
+            display: inline-block;
+            right: 34px;
+            top:43px;
+            /* border: 2px solid green; */
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            font-size: 25px;
+            display: inline-block;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover, .navbar li a:active{
+            text-decoration: underline;
+            color: rgb(203, 222, 234);
+        }
+        .btn{
+            font-family: "Pacifico", cursive;
+            margin: 0px 9px;
+            color: white;
+            background-color: rgb(2, 1, 5);
+            padding: -3px 14px;
+            /* border: 0px solid brown; */
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(54, 44, 40);
+        }
+        .container{
+            border: 2px solid gray;
+            margin: 106px 80px;
+            padding:75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 319px;
+            padding: 7px;
+            border: 2px solid black;
+            margin: 3px;
+            font-size: 13px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 89px;
+            margin:33px auto;
+        }
+    </style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="../img/logo.png" alt="">
+            
+            <div>Project Fitness</div>
+        </div>
+        <div class="middle">
+            <ul class="navbar">
+            
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Fitness Caculator</a> </li>
+                <li><a href="#">Contact us</a> </li>
+            </ul>
+        </div>
+        <!-- mid box for nav bar -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <!-- right for button -->
+    </header>
+    <div class="container">
+        <h1>Join the best gym of India now!</h1>
+        <form action="noaction.php">
+
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Full Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Location">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Phone Number/Email">
+            </div>
+            <button class="btn"> Sumbit</button>
+        </form>
+    </div>
+</body>
+</html>
